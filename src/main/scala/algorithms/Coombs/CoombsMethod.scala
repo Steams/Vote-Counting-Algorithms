@@ -45,9 +45,10 @@ object method {
     //NOTE : this doesnt account for ties right now
     val last : Candidate = lastPlaceVotes.maxBy{ x : (String,Int) => x._2}._1 //get the name of the candidate with the hights tally of last place votes
 
-    println("Most last place votes candidate ["+last+"]")
+    println("Most last place votes candidate [ "+last+" ]")
 
     //filter out the losing candidate
+    println("Eliminating [ "+last+" ]")
     val newCandidates = candidates.filter{ _ != last }
 
     //if only one candidate remains, they are the winner
@@ -57,6 +58,7 @@ object method {
 
     //otherwise we redistribute votes and run a next round
     //remove loser from each ranking to produce a new ranking
+    println("Redistributing Votes")
     val newRankings = for (ballot <- rankings)
                       yield {
                         Ranking(ballot.candidates.filter( _ != last ))

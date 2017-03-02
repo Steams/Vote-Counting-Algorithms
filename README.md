@@ -26,7 +26,9 @@ Results in
 [Nashville] First : 26 Last : 0
 [Chattanooga] First : 15 Last : 0
 [Knoxville] First : 17 Last : 42
-Most last place votes candidate [Memphis]
+Most last place votes candidate [ Memphis ]
+Eliminating [ Memphis ]
+Redistributing Votes
 [Nashville] First : 68 Last : 32
 [Chattanooga] First : 15 Last : 0
 [Knoxville] First : 17 Last : 68
