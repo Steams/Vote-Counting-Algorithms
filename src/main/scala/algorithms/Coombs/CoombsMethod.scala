@@ -22,15 +22,22 @@ object method {
     }
 
     // tally the votes of the favorite and least favorite candidate on each ballot
-    println("Ballot Rankings")
     for(ballot <- rankings){
-      println(ballot.candidates)
+      // println(ballot.candidates)
       firstPlaceVotes(ballot.currentFavorite) += 1
       lastPlaceVotes(ballot.leastFavorite) += 1
     }
 
     for(candidate <- candidates ){
-      println("candidate ["+candidate+"] First : "+firstPlaceVotes(candidate)+" Last : "+lastPlaceVotes(candidate))
+      println("["+candidate+"] First : "+firstPlaceVotes(candidate)+" Last : "+lastPlaceVotes(candidate))
+    }
+
+    val potential_majority : (String,Int) = firstPlaceVotes.max
+
+    //check for majority favorite
+    if(potential_majority._2 > (rankings.length /2)) {
+      println("Candidate [ " + potential_majority._1 + " ] has majority favor")
+      return firstPlaceVotes.max._1
     }
 
     // search for the most frequently least favorite candidate

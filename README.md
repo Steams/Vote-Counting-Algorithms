@@ -22,18 +22,15 @@ Running the Example from the Wikipedia page produces the correct output:
 ```
 Results in 
 ```
-candidate [Memphis] First : 42 Last : 58
-candidate [Nashville] First : 26 Last : 0
-candidate [Chattanooga] First : 15 Last : 0
-candidate [Knoxville] First : 17 Last : 42
+[Memphis] First : 42 Last : 58
+[Nashville] First : 26 Last : 0
+[Chattanooga] First : 15 Last : 0
+[Knoxville] First : 17 Last : 42
 Most last place votes candidate [Memphis]
-candidate [Nashville] First : 68 Last : 32
-candidate [Chattanooga] First : 15 Last : 0
-candidate [Knoxville] First : 17 Last : 68
-Most last place votes candidate [Knoxville]
-candidate [Nashville] First : 68 Last : 32
-candidate [Chattanooga] First : 32 Last : 68
-Most last place votes candidate [Chattanooga]
+[Nashville] First : 68 Last : 32
+[Chattanooga] First : 15 Last : 0
+[Knoxville] First : 17 Last : 68
+Candidate [ Nashville ] has majority favor
 Coombs Method: Winning candidate [ Nashville ] !!
 
 ```
